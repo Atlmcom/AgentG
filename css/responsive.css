@@ -1,0 +1,214 @@
+/* GroundAgent India - Responsive Breakpoints & Media Queries */
+
+/* Tablet & Smaller Desktops (<= 1024px) */
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .hero-visual-card {
+    max-width: 680px;
+    margin-inline: auto;
+  }
+
+  .trust-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6);
+  }
+
+  .trust-item:nth-child(3) {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .problem-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .audience-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .timeline-track {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .timeline-track::before {
+    top: 0;
+    bottom: 0;
+    left: 24px;
+    width: 2px;
+    height: auto;
+  }
+
+  .timeline-step {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: var(--space-4);
+  }
+
+  .timeline-node {
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+
+  .calculator-card {
+    grid-template-columns: 1fr;
+  }
+
+  .calculator-form-area {
+    border-right: none;
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .report-sheet-body {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .footer-main-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+  }
+}
+
+/* Tablet & Mobile (<= 768px) */
+@media (max-width: 768px) {
+  :root {
+    --header-height: 68px;
+  }
+
+  .desktop-nav .nav-links {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  .mobile-nav-drawer {
+    display: flex;
+  }
+
+  .comparison-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .broker-columns {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .calculator-controls-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-trustline {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+  }
+
+  .hero-trust-separator {
+    display: none;
+  }
+}
+
+/* Small Mobile (<= 480px / 390px) */
+@media (max-width: 480px) {
+  .container,
+  .container-narrow {
+    padding-inline: var(--space-4);
+  }
+
+  .section {
+    padding-block: 3.5rem;
+  }
+
+  .trust-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+
+  .trust-item {
+    border-left: none;
+    padding-left: 0;
+    padding-bottom: var(--space-3);
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .trust-item:last-child {
+    border-bottom: none;
+  }
+
+  .problem-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .audience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-ctas {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-ctas .btn {
+    width: 100%;
+  }
+
+  .report-kv-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .final-cta-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .final-cta-actions .btn {
+    width: 100%;
+  }
+}
+
+/* Wide Displays (>= 1440px) */
+@media (min-width: 1440px) {
+  .hero-headline {
+    font-size: 3.75rem;
+  }
+
+  .container {
+    max-width: 1320px;
+  }
+}

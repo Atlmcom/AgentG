@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b132b"/>
+      <stop offset="100%" stop-color="#152238"/>
+    </linearGradient>
+    <radialGradient id="hubGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#1d4ed8" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Deep Canvas Background -->
+  <rect width="540" height="500" rx="16" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Coordinate Grid -->
+  <g stroke="rgba(255, 255, 255, 0.05)" stroke-width="1">
+    <line x1="40" y1="0" x2="40" y2="500" stroke-dasharray="3 3"/>
+    <line x1="120" y1="0" x2="120" y2="500" stroke-dasharray="3 3"/>
+    <line x1="200" y1="0" x2="200" y2="500" stroke-dasharray="3 3"/>
+    <line x1="280" y1="0" x2="280" y2="500" stroke-dasharray="3 3"/>
+    <line x1="360" y1="0" x2="360" y2="500" stroke-dasharray="3 3"/>
+    <line x1="440" y1="0" x2="440" y2="500" stroke-dasharray="3 3"/>
+    <line x1="0" y1="80" x2="540" y2="80" stroke-dasharray="3 3"/>
+    <line x1="0" y1="160" x2="540" y2="160" stroke-dasharray="3 3"/>
+    <line x1="0" y1="240" x2="540" y2="240" stroke-dasharray="3 3"/>
+    <line x1="0" y1="320" x2="540" y2="320" stroke-dasharray="3 3"/>
+    <line x1="0" y1="400" x2="540" y2="400" stroke-dasharray="3 3"/>
+  </g>
+
+  <!-- Stylized Geometric Outline of India Subcontinent -->
+  <path d="M 235,50 
+           L 260,75 L 290,95 L 295,125 L 340,140 L 375,175 L 430,175 L 450,195 L 440,215 L 385,215 L 360,250 L 330,290 L 310,340 L 290,390 L 275,445 L 260,430 L 245,380 L 225,320 L 195,295 L 180,265 L 140,260 L 165,225 L 175,185 L 195,150 L 220,110 Z" 
+        fill="rgba(30, 58, 138, 0.25)" 
+        stroke="rgba(96, 165, 250, 0.45)" 
+        stroke-width="1.75" 
+        stroke-linejoin="round"/>
+
+  <!-- Telemetry Lines Between Manufacturing Clusters -->
+  <g stroke="#3b82f6" stroke-width="1" stroke-dasharray="4 4" opacity="0.4">
+    <line x1="230" y1="135" x2="185" y2="235"/> <!-- NCR to Gujarat -->
+    <line x1="185" y1="235" x2="210" y2="295"/> <!-- Gujarat to Maharashtra -->
+    <line x1="210" y1="295" x2="255" y2="365"/> <!-- Maharashtra to Karnataka/TN -->
+    <line x1="255" y1="365" x2="290" y2="380"/> <!-- Karnataka to Chennai -->
+    <line x1="230" y1="135" x2="350" y2="240"/> <!-- NCR to East -->
+  </g>
+
+  <!-- Manufacturing Hub 1: Delhi NCR / Haryana -->
+  <g transform="translate(230, 135)">
+    <circle r="14" fill="url(#hubGlow)"/>
+    <circle r="5" fill="#38bdf8"/>
+    <circle r="2" fill="#ffffff"/>
+    <text x="12" y="4" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="10" font-weight="600">DELHI NCR / FARIDABAD</text>
+    <text x="12" y="16" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="8">Automotive &amp; Machinery</text>
+  </g>
+
+  <!-- Manufacturing Hub 2: Gujarat (Ahmedabad / Vadodara / Rajkot) -->
+  <g transform="translate(185, 235)">
+    <circle r="16" fill="url(#hubGlow)"/>
+    <circle r="6" fill="#10b981" filter="url(#glow)"/>
+    <circle r="2.5" fill="#ffffff"/>
+    <text x="-12" y="-12" text-anchor="end" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="10" font-weight="600">GUJARAT INDUSTRIAL CORRIDOR</text>
+    <text x="-12" y="0" text-anchor="end" fill="#34d399" font-family="'Inter', sans-serif" font-size="8">Active Inspection Zone</text>
+  </g>
+
+  <!-- Manufacturing Hub 3: Maharashtra (Mumbai / Pune / Nashik) -->
+  <g transform="translate(210, 295)">
+    <circle r="14" fill="url(#hubGlow)"/>
+    <circle r="5" fill="#38bdf8"/>
+    <circle r="2" fill="#ffffff"/>
+    <text x="-12" y="4" text-anchor="end" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="10" font-weight="600">PUNE / MUMBAI</text>
+    <text x="-12" y="16" text-anchor="end" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="8">Precision Engineering</text>
+  </g>
+
+  <!-- Manufacturing Hub 4: Tamil Nadu (Chennai / Coimbatore) -->
+  <g transform="translate(290, 380)">
+    <circle r="14" fill="url(#hubGlow)"/>
+    <circle r="5" fill="#38bdf8"/>
+    <circle r="2" fill="#ffffff"/>
+    <text x="12" y="4" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="10" font-weight="600">CHENNAI / COIMBATORE</text>
+    <text x="12" y="16" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="8">Hardware &amp; Textiles</text>
+  </g>
+
+  <!-- Manufacturing Hub 5: Karnataka (Bengaluru) -->
+  <g transform="translate(255, 365)">
+    <circle r="10" fill="url(#hubGlow)"/>
+    <circle r="4" fill="#38bdf8"/>
+    <circle r="1.5" fill="#ffffff"/>
+  </g>
+
+  <!-- Top Overlay Status Tag -->
+  <g transform="translate(30, 30)">
+    <rect width="180" height="28" rx="6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+    <circle cx="14" cy="14" r="4" fill="#10b981"/>
+    <text x="26" y="18" fill="#e2e8f0" font-family="'Inter', sans-serif" font-size="10" font-weight="600">INDIA GROUND NETWORK</text>
+  </g>
+
+  <!-- Bottom Telemetry Legend -->
+  <g transform="translate(30, 445)">
+    <text x="0" y="0" fill="#64748b" font-family="'Inter', sans-serif" font-size="9" font-weight="500">COORDINATION • VERIFICATION • FACILITY VISITS</text>
+    <text x="0" y="14" fill="#475569" font-family="'Inter', sans-serif" font-size="8">Direct Buyer Representation Across Key Industrial Clusters</text>
+  </g>
+</svg>

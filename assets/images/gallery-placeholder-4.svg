@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="g4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b132b"/>
+      <stop offset="100%" stop-color="#152238"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#g4)"/>
+
+  <!-- High-Density Warehouse Racking Grid -->
+  <g stroke="#334155" stroke-width="2">
+    <!-- Vertical Uprights -->
+    <line x1="80" y1="80" x2="80" y2="300"/>
+    <line x1="200" y1="80" x2="200" y2="300"/>
+    <line x1="320" y1="80" x2="320" y2="300"/>
+    <line x1="440" y1="80" x2="440" y2="300"/>
+    <line x1="560" y1="80" x2="560" y2="300"/>
+    <!-- Horizontal Beams -->
+    <line x1="60" y1="120" x2="580" y2="120"/>
+    <line x1="60" y1="180" x2="580" y2="180"/>
+    <line x1="60" y1="240" x2="580" y2="240"/>
+    <line x1="60" y1="300" x2="580" y2="300"/>
+  </g>
+
+  <!-- Pallets & Material Cargo Blocks -->
+  <g fill="rgba(30, 58, 138, 0.4)" stroke="#60a5fa" stroke-width="1.5">
+    <rect x="95" y="130" width="90" height="45" rx="3"/>
+    <rect x="215" y="130" width="90" height="45" rx="3"/>
+    <rect x="335" y="130" width="90" height="45" rx="3"/>
+    <rect x="455" y="130" width="90" height="45" rx="3"/>
+
+    <rect x="95" y="190" width="90" height="45" rx="3" fill="rgba(5, 150, 105, 0.25)" stroke="#10b981"/>
+    <rect x="215" y="190" width="90" height="45" rx="3"/>
+    <rect x="335" y="190" width="90" height="45" rx="3"/>
+
+    <rect x="95" y="250" width="90" height="45" rx="3"/>
+    <rect x="215" y="250" width="90" height="45" rx="3"/>
+    <rect x="455" y="250" width="90" height="45" rx="3"/>
+  </g>
+
+  <!-- In-Transit Barcode / Serial Scan HUD -->
+  <g transform="translate(140, 205)">
+    <line x1="-20" y1="0" x2="20" y2="0" stroke="#f43f5e" stroke-width="2"/>
+    <circle cx="0" cy="0" r="3" fill="#f43f5e"/>
+  </g>
+
+  <rect x="30" y="330" width="250" height="40" rx="6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(255, 255, 255, 0.15)"/>
+  <text x="44" y="348" fill="#e2e8f0" font-family="'Inter', sans-serif" font-size="11" font-weight="700">ASSESSMENT RECORD #OGA-055</text>
+  <text x="44" y="362" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="9">Raw Material Inventory &amp; Staging Storage</text>
+
+  <rect x="420" y="30" width="150" height="26" rx="4" fill="rgba(30, 58, 138, 0.4)" stroke="#3b82f6"/>
+  <text x="432" y="47" fill="#93c5fd" font-family="'Inter', sans-serif" font-size="9" font-weight="600">PHOTO PLACEHOLDER</text>
+</svg>
