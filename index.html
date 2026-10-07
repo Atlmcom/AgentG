@@ -50,11 +50,11 @@
   </script>
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/sections.css">
-  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/variables.css?v=4">
+  <link rel="stylesheet" href="css/base.css?v=4">
+  <link rel="stylesheet" href="css/components.css?v=4">
+  <link rel="stylesheet" href="css/sections.css?v=4">
+  <link rel="stylesheet" href="css/responsive.css?v=4">
 </head>
 <body>
 
@@ -842,9 +842,9 @@
 
         <div class="report-preview-sheet">
           <div class="report-sheet-header">
-            <div>
-              <span style="font-weight: 700; letter-spacing: -0.01em;">GROUNDAGENT INSPECTION DOSSIER</span>
-              <span style="opacity: 0.6; margin-left: 0.5rem; font-size: 0.85rem;">| MOCK PREVIEW</span>
+            <div class="report-sheet-title">
+              <span class="report-sheet-title-main">GROUNDAGENT INSPECTION DOSSIER</span>
+              <span class="report-sheet-title-sub">| MOCK PREVIEW</span>
             </div>
             <span class="report-sheet-badge">STRUCTURED REPORT FORMAT</span>
           </div>
@@ -972,7 +972,7 @@
           </div>
 
           <!-- Mandatory Disclaimer -->
-          <div class="container" style="padding-bottom: 1.5rem;">
+          <div class="report-disclaimer-wrapper">
             <div class="report-disclaimer-box">
               <strong>Reporting Notice:</strong> GroundAgent reports observations and information gathered during the assignment. A site visit is not a guarantee of supplier performance, product quality, financial stability or future delivery.
             </div>
@@ -1049,8 +1049,8 @@
           
           <!-- Inputs Column -->
           <div class="calculator-form-area">
-            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
-              <h3 style="font-size: 1.15rem; font-weight: 700;">Should you travel yourself?</h3>
+            <div class="calculator-header-flex">
+              <h3 class="calculator-header-title">Should you travel yourself?</h3>
               <div class="currency-toggle-bar" role="group" aria-label="Select Currency">
                 <button type="button" class="currency-btn active" data-currency="USD" aria-pressed="true">$ USD</button>
                 <button type="button" class="currency-btn" data-currency="GBP" aria-pressed="false">£ GBP</button>
@@ -1146,7 +1146,7 @@
               <p style="font-size: 0.875rem; color: #1e3a8a; line-height: 1.5; font-weight: 500; margin-bottom: 0.5rem;">
                 GroundAgent can handle selected on-ground tasks without requiring your team to travel.
               </p>
-              <a href="#book-an-agent" class="btn btn-primary btn-sm" style="width: 100%;">
+              <a href="#book-an-agent" class="btn btn-primary btn-sm calc-cta-btn" style="width: 100%;">
                 Request On-Ground Representative →
               </a>
             </div>
@@ -1207,7 +1207,7 @@
               </div>
             </div>
 
-            <button type="button" class="btn btn-primary" onclick="selectServiceAndScroll('Professional Assessment')" style="width: 100%;">
+            <button type="button" class="btn btn-primary pricing-cta-btn" onclick="selectServiceAndScroll('Professional Assessment')" style="width: 100%;">
               Book Professional Assessment →
             </button>
           </div>
@@ -1243,7 +1243,7 @@
               </div>
             </div>
 
-            <button type="button" class="btn btn-secondary" onclick="selectServiceAndScroll('Custom Assessment')" style="width: 100%;">
+            <button type="button" class="btn btn-secondary pricing-cta-btn" onclick="selectServiceAndScroll('Custom Assessment')" style="width: 100%;">
               Discuss Custom Requirement →
             </button>
           </div>
@@ -1801,10 +1801,10 @@
   </div>
 
   <!-- Scripts -->
-  <script src="js/main.js"></script>
-  <script src="js/calculator.js"></script>
-  <script src="js/faq.js"></script>
-  <script src="js/report-modal.js"></script>
-  <script src="js/booking-form.js"></script>
+  <script src="js/main.js?v=4"></script>
+  <script src="js/calculator.js?v=4"></script>
+  <script src="js/faq.js?v=4"></script>
+  <script src="js/report-modal.js?v=4"></script>
+  <script src="js/booking-form.js?v=4"></script>
 </body>
 </html>
