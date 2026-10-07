@@ -316,24 +316,98 @@
   top: var(--header-height);
   left: 0;
   right: 0;
-  bottom: 0;
+  height: calc(100dvh - var(--header-height));
   background-color: var(--color-white);
-  padding: var(--space-6);
+  padding: var(--space-5) var(--space-6);
   border-top: 1px solid var(--border-light);
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   z-index: var(--z-header);
   flex-direction: column;
-  gap: var(--space-4);
-  transform: translateY(-100%);
+  justify-content: space-between;
+  transform: translateY(-8px);
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
-  transition: transform var(--transition-normal), opacity var(--transition-normal);
+  transition: transform var(--transition-fast), opacity var(--transition-fast), visibility var(--transition-fast);
+  box-shadow: var(--shadow-xl);
 }
 
 .mobile-nav-drawer.open {
   transform: translateY(0);
   opacity: 1;
+  visibility: visible;
   pointer-events: auto;
+}
+
+/* Mobile Sticky Bottom Action Bar */
+.mobile-sticky-bottom-bar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--z-sticky);
+  background-color: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid var(--border-medium);
+  box-shadow: 0 -4px 16px rgba(11, 19, 43, 0.08);
+  padding: 10px 16px;
+  padding-bottom: max(10px, env(safe-area-inset-bottom));
+}
+
+.mobile-sticky-cta-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  max-width: 500px;
+  margin-inline: auto;
+}
+
+.mobile-sticky-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.mobile-sticky-title {
+  font-size: 0.875rem;
+  font-weight: 800;
+  color: var(--color-ink-primary);
+  line-height: 1.1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mobile-sticky-sub {
+  font-size: 0.725rem;
+  color: var(--color-ink-muted);
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mobile-sticky-btn {
+  flex-shrink: 0;
+  padding: 0.6rem 1.15rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  box-shadow: var(--shadow-sm);
+}
+
+/* Mobile Swipe Hint for Gallery */
+.mobile-swipe-indicator {
+  display: none;
+  font-size: 0.8rem;
+  color: var(--color-accent-primary);
+  font-weight: 600;
+  text-align: center;
+  margin-top: var(--space-3);
+  letter-spacing: 0.02em;
 }
 
 .mobile-nav-links {
