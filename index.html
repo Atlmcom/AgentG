@@ -50,11 +50,11 @@
   </script>
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/variables.css?v=4">
-  <link rel="stylesheet" href="css/base.css?v=4">
-  <link rel="stylesheet" href="css/components.css?v=4">
-  <link rel="stylesheet" href="css/sections.css?v=4">
-  <link rel="stylesheet" href="css/responsive.css?v=4">
+  <link rel="stylesheet" href="css/variables.css?v=5">
+  <link rel="stylesheet" href="css/base.css?v=5">
+  <link rel="stylesheet" href="css/components.css?v=5">
+  <link rel="stylesheet" href="css/sections.css?v=5">
+  <link rel="stylesheet" href="css/responsive.css?v=5">
 </head>
 <body>
 
@@ -1272,7 +1272,12 @@
         <div class="container-narrow">
           <div class="form-card">
             
-            <form id="book-agent-form" novalidate>
+            <form id="book-agent-form" action="https://formsubmit.co/AgentGindia@gmail.com" method="POST" novalidate>
+              <!-- Anti-Spam Honeypot Field -->
+              <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+              <!-- FormSubmit Configuration -->
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_captcha" value="false">
               
               <!-- Contact Details -->
               <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 1.25rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border-light);">
@@ -1427,7 +1432,22 @@
                 <div>
                   <strong style="display: block; font-size: 1.05rem; margin-bottom: 0.25rem;">Thank you. Your request has been received.</strong>
                   <p style="font-size: 0.95rem; color: #065f46; margin: 0;">
-                    We'll review the assignment and get back to you with the next steps.
+                    We'll review the assignment and get back to you with the next steps shortly.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Error Alert -->
+              <div id="form-error-alert" class="submission-alert submission-error" role="alert" tabindex="-1">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="8" x2="12" y2="12"></line>
+                  <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+                <div>
+                  <strong style="display: block; font-size: 1.05rem; margin-bottom: 0.25rem;">Could not send inquiry.</strong>
+                  <p style="font-size: 0.95rem; color: #991b1b; margin: 0;">
+                    Please check your internet connection and try again, or email us directly at <a href="mailto:AgentGindia@gmail.com" style="color: #991b1b; font-weight: 700; text-decoration: underline;">AgentGindia@gmail.com</a>.
                   </p>
                 </div>
               </div>
@@ -1658,7 +1678,7 @@
           <h4 class="footer-col-title">Contact</h4>
           <ul class="footer-links">
             <li style="color: #94a3b8; font-size: 0.925rem;">
-              Email: <span style="color: #cbd5e1;">enquiries@groundagentindia.com</span>
+              Email: <a href="mailto:AgentGindia@gmail.com" style="color: #cbd5e1; text-decoration: underline;">AgentGindia@gmail.com</a>
             </li>
             <li style="color: #94a3b8; font-size: 0.925rem;">
               WhatsApp: <span style="color: #cbd5e1;">+91 [GroundAgent Direct]</span>
@@ -1801,10 +1821,10 @@
   </div>
 
   <!-- Scripts -->
-  <script src="js/main.js?v=4"></script>
-  <script src="js/calculator.js?v=4"></script>
-  <script src="js/faq.js?v=4"></script>
-  <script src="js/report-modal.js?v=4"></script>
-  <script src="js/booking-form.js?v=4"></script>
+  <script src="js/main.js?v=5"></script>
+  <script src="js/calculator.js?v=5"></script>
+  <script src="js/faq.js?v=5"></script>
+  <script src="js/report-modal.js?v=5"></script>
+  <script src="js/booking-form.js?v=5"></script>
 </body>
 </html>
